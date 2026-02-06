@@ -1,0 +1,314 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', Arial, sans-serif;
+	background: #f4f6f8;
+	color: #222;
+}
+
+header,footer{
+	background: linear-gradient(135deg, #1e1e1e, #333);
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+
+
+
+nav {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 12px 28px;
+
+	background: rgba(255, 255, 255, 0.08);
+	backdrop-filter: blur(10px);
+
+	border-radius: 18px;
+	box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 8px 16px;
+	border-radius: 12px;
+	transition: 0.3s;
+}
+
+nav a:hover {
+	background: #20c997;
+	color: #000;
+}
+
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav li {
+	list-style: none;
+	display: inline;
+	margin: 0px 10px;
+}
+
+main {
+	padding: 30px;
+}
+
+.products-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	justify-content: center;
+}
+
+.product-card {
+	background: white;
+	width: 340px;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+	transition: 0.3s ease;
+}
+
+.product-card:hover {
+	transform: scale(1.05);
+	transition: 0.3s ;
+}
+
+.product-card h3 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.product-card img {
+	width: 100%;
+	height: 300px;
+	object-fit: contain;
+	padding: 25px;
+	border-radius: 15px;
+}
+
+
+.product-card .yoga {
+	font-size: 20px;
+	font-weight: 700;
+	color: #e63946;
+}
+
+
+.product-card button {
+	width: 100%;
+	padding: 14px;
+	border-radius: 12px;
+	background: linear-gradient(135deg, #20c997, #0ca678);
+	color: white;
+	cursor: pointer;
+	
+}
+
+
+button::after {
+	position: absolute;
+	right: -30px;
+	transition: 0.3s;
+}
+
+button:hover {
+	padding-right: 45px;
+}
+
+button:active {
+	transform: scale(0.97);
+}
+
+
+
+
+#cart-info {
+	margin: 10px;
+	color: lightgreen;
+}
+
+
+
+
+
+#clear-cart-btn {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: none;
+	background: #e63946;
+	color: white;
+	cursor: pointer;
+}
+
+
+.home {
+	background: white;
+	border-radius: 25px;
+	max-width: 1100px;
+	margin: 40px auto;
+	padding: 70px 40px;
+	text-align: center;
+	box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.home h1 {
+	font-size: 52px;
+	margin-bottom: 15px;
+}
+
+.home p {
+	font-size: 18px;
+	color: #555;
+	margin-bottom: 35px;
+}
+
+.btn {
+	padding: 14px 30px;
+	background: #20c997;
+	color: white;
+	border-radius: 12px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+
+/* ===== ГОЛОВНА СТОРІНКА ===== */
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	max-width: 1100px;
+	margin: 40px auto;
+	padding: 60px;
+
+	background: #fff;
+	border-radius: 25px;
+	box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.hero-text {
+	max-width: 500px;
+}
+
+.hero-text h1 {
+	font-size: 48px;
+	margin-bottom: 15px;
+}
+
+.hero-text p {
+	font-size: 18px;
+	color: #555;
+	margin-bottom: 30px;
+}
+
+.hero-btn {
+	padding: 14px 30px;
+	background: #20c997;
+	color: white;
+	border-radius: 12px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+.hero-image img {
+	width: 300px;
+	height: 250px;
+	max-width: 100%;
+}
+.benefits {
+	text-align: center;
+	margin: 80px 0;
+	color: white;
+}
+
+.benefit-list {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	margin-top: 30px;
+}
+
+.benefit-card {
+	background: white;
+	color: #222;
+	padding: 20px 30px;
+	border-radius: 15px;
+	font-weight: 600;
+	min-width: 220px;
+}
+
+.reviews {
+	background: white;
+	max-width: 900px;
+	margin: 60px auto;
+	padding: 50px;
+	border-radius: 25px;
+	text-align: center;
+}
+
+.reviews blockquote {
+	font-style: italic;
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+.rating {
+	font-size: 20px;
+	color: #f4a261;
+}
+
+.cta {
+	margin-top: -30px; 
+	text-align: center;
+}
+
+.cta h2 {
+	color: #fff;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.cta .hero-btn {
+	font-size: 18px;
+	padding: 14px 36px;
+}
+
+
+
+.goga, .gogi, .fofw, .dd {
+	color: black;
+}
+
+
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+
