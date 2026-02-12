@@ -110,7 +110,7 @@ const products = [
 let cart = []
 const cartInfo = document.getElementById("cart-info");
 const productsContainer = document.getElementById("products-container");
-const clearCartBtn = document.getElementById("clear-cart-btn");
+const clearCartBtn = document.querySelector(".clear-cart-btn");
 const searchInput = document.getElementById("search-input");
 const categoryFilter = document.getElementById("category-filter");
 
