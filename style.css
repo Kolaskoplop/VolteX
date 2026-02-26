@@ -406,7 +406,13 @@ header h1{
   box-shadow: 0 8px 25px rgba(32,201,151,0.8), 0 0 20px rgba(32,255,156,0.6);
 }
 
-/* фільтри */
+
+.product-card button:active {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(32,201,151,0.8), 0 0 20px rgba(32,255,156,0.6);
+  background: red;
+}
+
 .filters{
 	max-width: 1200px;
 	margin: 25px auto;
