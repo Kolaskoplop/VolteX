@@ -23,7 +23,7 @@ color: var(--text-main);
 }
 
 
-header, footer{
+header{
 background: linear-gradient(135deg, #0e1330, #090c1d);
 padding: 22px;
 text-align: center;
@@ -31,7 +31,10 @@ border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 footer{
+background: linear-gradient(135deg, #0e1330, #090c1d);
 border-top: 1px solid rgba(255,255,255,0.05);
+padding: 22px;
+text-align: center;
 border-bottom: none;
 color: var(--text-muted);
 }
@@ -219,9 +222,90 @@ background: linear-gradient(90deg, var(--neon-purple), var(--neon-cyan));
 
 
 
+/*МОБІЛЬНИЙ ПРИСТРІЙ -------------------------------------------*/
+@media(max-width: 600px){
+
+	nav{
+display: inline-block;
+padding: 14px 34px;
+background: rgba(20,25,55,0.55);
+backdrop-filter: blur(12px);
+border-radius: 22px;
+box-shadow: 0 0 25px rgba(124,124,255,0.25);
+width: 100%;
+}
 
 
+nav ul{
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 32px;
+margin: 0;
+padding: 0;
+width: 100%;
+}
 
+
+nav a{
+color: var(--text-main);
+text-decoration: none;
+font-weight: 600;
+padding: 10px 50px;
+border-radius: 14px;
+transition: 0.3s;
+}
+
+
+nav a:hover{
+background: linear-gradient(135deg, var(--neon-purple), var(--neon-cyan));
+color: #05070f;
+box-shadow: 0 0 15px var(--neon-cyan);
+}
+
+.hero{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+max-width: 1200px;
+margin: 60px auto;
+padding: 70px;
+background: linear-gradient(145deg, #12182a, #0c1020);
+border-radius: 30px;
+box-shadow: 0 0 40px rgba(32,243,255,0.15);
+}
+
+
+.hero-image img{
+	width: 250px;
+	height: auto;
+	margin-top: 50px;
+	filter: drop-shadow(0 0 25px rgba(124,124,255,0.6));
+	border-radius: 10px;
+	margin-left: 0px;
+
+}
+
+.hero-btn{
+	padding: 8px 18px;
+	border-radius: 16px;
+	font-weight: 700;
+	background: linear-gradient(135deg, var(--neon-green), var(--neon-cyan));
+	color: #05070f;
+	box-shadow: 0 0 25px rgba(45,255,156,0.6);
+	transition: 0.25s;
+}
+
+.benefit-list{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+}
+
+
+}
 
 
 
@@ -260,7 +344,6 @@ header h1{
 .product-card{
 	background: #ffffff;
 	color: #111;
-	width: 320px;
 	border-radius: 20px;
 	padding: 20px;
 	box-shadow: 0 10px 25px rgba(0,0,0,0.15);
@@ -352,13 +435,12 @@ header .clear-cart-btn:hover{
 }
 
 .products-container{
-	max-width: 1400px;
-	margin: 40px auto;
-	padding: 0 30px;
+	max-width: 1200px;
+	margin: 30px auto;
+	padding: 0 10px;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 35px;
-	align-items: stretch;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: 25px;
 }
 
 
@@ -521,3 +603,6 @@ header .clear-cart-btn:hover{
     color: var(--text-muted);
     line-height: 1.4;
 }
+
+
+
